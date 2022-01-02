@@ -1,0 +1,28 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Zoom meeting",
+      "day": "Jan 1th at 1:00pm",
+      "reminder": true
+    },
+    {
+      "id": 2,
+      "text": "Doctor's appointment",
+      "day": "Jan 2th at 1:00pm",
+      "reminder": true
+    },
+    {
+      "text": "Gym training",
+      "day": "Jan 5th at 2:00pm",
+      "reminder": false,
+      "id": 3
+    },
+    {
+      "text": "Vacation trip",
+      "day": "Jan 10th",
+      "reminder": false,
+      "id": 4
+    }
+  ]
+}
