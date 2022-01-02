@@ -1,6 +1,6 @@
 # Task-Tracker
 
-In this project, I built a task tracker application using React.js with JSON Server to create REST JSON web services.
+In this project, I built a task tracker application using React.js with JSON Server to create mock REST JSON web services.
 
 You can access the tool here: https://kennyphan100.github.io/Task-Tracker/
 
