@@ -18,3 +18,6 @@ You can access the tool here: https://kennyphan100.github.io/Task-Tracker/
 	* Spread operator
 	* Template literals
 	* Destructuring assignment
+
+![image](https://user-images.githubusercontent.com/66841718/147883071-fa446ef8-1886-421f-ad0e-601fd5ca6dc4.png)
+
