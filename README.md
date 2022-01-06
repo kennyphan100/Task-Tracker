@@ -20,5 +20,9 @@ You can access the tool here: https://kennyphan100.github.io/Task-Tracker/
 	* Destructuring assignment
 
 ![image](https://user-images.githubusercontent.com/66841718/147883071-fa446ef8-1886-421f-ad0e-601fd5ca6dc4.png)
+
+<br/>
+<br/>
+
 ![image](https://user-images.githubusercontent.com/66841718/147883090-78f0b183-1bcf-4725-81f9-8cb49f79fc26.png)
 
