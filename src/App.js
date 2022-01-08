@@ -21,21 +21,21 @@ function App() {
   }, []);
 
   const fetchTasks = async() => {
-    const response = await fetch('http://localhost:5000/tasks');
+    const response = await fetch('https://my-json-server.typicode.com/kennyphan100/Task-Tracker-DB/tasks');
     const data = await response.json();
     return data;
   }
 
   // Fetch Task
   const fetchTask = async(id) => {
-    const response = await fetch(`http://localhost:5000/tasks/${id}`);
+    const response = await fetch(`https://my-json-server.typicode.com/kennyphan100/Task-Tracker-DB/tasks/${id}`);
     const data = await response.json();
     return data;
   }
 
   // Delete Task
   const deleteTask = async(id) => {
-    await fetch(`http://localhost:5000/tasks/${id}`, {
+    await fetch(`https://my-json-server.typicode.com/kennyphan100/Task-Tracker-DB/tasks/${id}`, {
       method: 'DELETE',
     });
 
@@ -47,7 +47,7 @@ function App() {
     const taskToToggle = await fetchTask(id);
     const updTask = {...taskToToggle, reminder: !taskToToggle.reminder};
 
-    const response = await fetch(`http://localhost:5000/tasks/${id}`, {
+    const response = await fetch(`https://my-json-server.typicode.com/kennyphan100/Task-Tracker-DB/tasks/${id}`, {
       method: 'PUT',
       headers: {
         'Content-type':'application/json'
@@ -62,7 +62,7 @@ function App() {
 
   // Add Task
   const addTask = async(task) => {
-    const response = await fetch('http://localhost:5000/tasks', {
+    const response = await fetch('https://my-json-server.typicode.com/kennyphan100/Task-Tracker-DB/tasks', {
       method: 'POST',
       headers: {
         'Content-type':'application/json'
@@ -81,7 +81,7 @@ function App() {
         <Header onAdd={() => setShowAddTask(!showAddTask)} showAdd={showAddTask}/>
 
         <Routes>
-          <Route path='/' exact element={(
+          <Route path='/Task-Tracker/' exact element={(
             <>
               {showAddTask && <AddTask onAdd={addTask}/>}
               {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder}/> : ('No Tasks')}
